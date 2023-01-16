@@ -1,0 +1,16 @@
+/* CSS--- Cascading Style Sheets
+
+    # gives style to raw html
+    # used to make websites responsive
+    # takes responsibility of design
+
+    SYNTAX
+
+    selector, selector2 ... selectorn {property : value;}
+
+    three ways to add css to the markup
+    1. inline css: is added to the elements directly using style attribute
+    2. internal css: is kept inside the head tags in <style tag>
+    3. external css: css is kept separately inside  .css style sheet
+
+*/

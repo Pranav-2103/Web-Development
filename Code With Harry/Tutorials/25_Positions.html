@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+
+    <style>
+        .container{
+            background-color: khaki;
+            height: 2000px;
+        }
+        .box{
+            border: 2px solid black;
+            width: 130px;
+            margin: 5px;
+            display: inline-block;/*agar inline block nahi dunga toh width work nahi karega and upar width define karna bekar ho gaya but inline-block de doge toh inline element bhi hoga and block element ki tarah aap usko width bhi de paaoge*/
+            height: 130px;
+        }
+        #box3{
+            /* position: static (default), relative, absolute, fixed, sticky */
+
+            /* relative: apni purani position ke relative new positions set hoegi */
+            /* position: relative;
+            top: 20px;
+            left: 50px; */
+
+            /* absolute: apne parent ki position ke relative apni new positions set karega */
+            /* position: absolute;
+            top: 70px;
+            left: 50px;  iss case mei parent position container ki hai isliye uske respect mei new positions set ho rahi hai */
+
+            /* fixed: ek hi jagah fix ho jana waha se bilkil nahi hatna just like chat option in facebook or any other website */
+            /* position: fixed;
+            right: 2px; now if you will scroll down the webpage the box 3 will always in the right position*/
+
+            /* sticky: pehle wo apni hi real position pr rahega then top se jaake chipak jaaega agar scroll karoge */
+            /* position: sticky;
+            top: 0px; bas top hi kaam karega and top se hi chipka rahega aur kahi nahi jaaega jaise fixed position mei ho jaata hai */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>

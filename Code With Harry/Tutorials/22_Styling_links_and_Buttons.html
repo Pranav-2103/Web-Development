@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors and More designing</title>
+
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rgb(194, 206, 175);
+            padding: 34px;
+            margin: 34px auto;
+            width: 666px;
+        }
+        a{
+            text-decoration: none; /*jo line aa rahi thi text ke neeche link ki wajah se wo hatt gayi iski help se*/
+            color: black;
+        }
+
+        a:hover{/*jab cursor uske upr leke jaaoge toh chamatkar hoga like color change ho jana and many more*/
+            color: rgb(199, 23, 23);
+            background-color: rgb(242, 191, 201);
+        }
+
+        a:visited{
+            background-color: rgb(163, 163, 38);
+        }
+        a:active{
+            background-color: rgb(75, 75, 227);
+        }
+
+        .btn{
+            font-family: cursive;
+            font-weight: bold;
+            background-color: cornflowerblue;
+            padding: 6px;
+            border: none;
+            cursor: pointer; /*isse cursor button ke upar lejane pr pointer jaise dikhega */
+            font-size: 13px;
+            border-radius: 4px;
+
+        }
+
+        .btn:hover{
+            color: darkgoldenrod; /*hover karne pr text ka color change hoega*/
+            background-color: rgb(188, 44, 44);/*hover karne par background color change hoga*/
+            border: 2px solid black;/*hover karne par hi border aaega*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eius similique pariatur quo, explicabo earum vel illum, exercitationem incidunt sequi vitae harum culpa repellat vero facilis nesciunt laboriosam non illo nam modi aut sed.</p>
+        <a href="https://www.facebook.com/" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>

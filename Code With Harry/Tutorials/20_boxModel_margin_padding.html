@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX MODEL</title>
+    <style>
+        /* UNIVERSAL SELECTOR : default values set krne k liye saare elements mei ya blocks mei untill wo neeche kisi aur class mei overwrite na kiya jaaye */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: cyan;
+        }
+
+        .container{
+            background-color: #8cc3f3;
+            border: 3px solid #101010;
+            /* padding: 79px; /*content and border ke beeck mei spacee dene ke liye*/
+            margin: 34px; /*borders ke bahar ki space*/
+
+            /* alag alag par aise apply hogi 
+            padding-top :
+            padding-bottom :
+            padding-left :
+            padding-tight :
+            */
+            /* ABOVE IS SAME FOR MARGIN */
+
+            /* padding: 23px 34px 44px 54px; */
+            /*top right bottom left  (clockwise direction)*/
+            /* ABOVE IS SAME FOR MARGIN */
+
+            /* another shortcut */
+            padding: 34px 19px; /*top/bottom   left/right*/
+            border-radius: 23px;
+            width: 233px;
+            box-sizing: border-box; /*padding and margin se aapki widrh pr effect nahi padega isse isliye ye use kiya jata hai*/
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate sapiente dicta ullam id animi?</p>
+    </div>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate sapiente dicta ullam id animi?</p>
+
+    </div>
+    <div class="container"> 
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate sapiente dicta ullam id animi?</p>
+    </div>
+
+</body>
+</html>

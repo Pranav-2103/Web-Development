@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibilty and z-index</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+        }
+        #box1{
+            background-color: orange;
+            position: relative;
+            top: 49px;
+        }
+        #box2{   
+            background-color: wheat;
+            position: relative;
+            /* top: 14px; */
+            z-index: -1; /*z-index ko use kiya jaata hai jisse ki poisitioned elements jo overlap ho rahe hai unme se konsa upar hona chahiye wo decide ho sake.
+            
+            jaise ki iss case mei:
+            box 2 ka zindex -1 hai and box1 ka zindex 0 hai bydefault and hum chahte the ki box1 upar aa jaye jo ki by default nahi tha kyunki box 2 upar tha box1 ke pr jaise hi humne box2 ka zindex -1 kar diya toh wo 0 se kam ho gaya jiske wajah se box1 upr aa gaya and box2 neeche chala gaya
+            
+            hence conclusion ki jiska zindex kam hoga wo neeche dab jaaega*/
+        }
+        #box3{
+            background-color: green;
+            /* display: none;
+            display none kar doge toh element gayab ho jaaega and uski reserved space par next element aa jaeega */
+            /* visibility: hidden;
+            visiblility hidden hone par bhi element gayab ho jaata hai par uski reserved space khali rehti hai and udhr koi aur element nahi aata. */
+        }
+        #box4{
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

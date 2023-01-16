@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, Width, Borders and Backgrounds</title>
+    
+    <style>
+        #firstpara{
+            background-color: yellow;
+            height: 100px;
+            width: 300px;
+            /* border-width: 4px;
+            border-color: green;
+            border-style: solid; */
+            /* ABOVE 3 LINES CAN BE WRITTEN SAME AS BELOW LINE */
+            border: 4px solid green;
+            border-radius: 3px; /*used to give curves to the border*/
+
+        }
+
+        #secondpara{
+            background-color: rgb(195, 195, 180);
+            height: 100px;
+            width: 300px;
+            border-top: 2px solid blue;
+            border-bottom: 2px solid red;
+            border-left: 2px solid yellow;
+            border-right: 2px solid black;
+
+            border-top-left-radius: 4px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 24px;
+            border-bottom-right-radius: 34px;
+
+        }
+
+        #thirdpara{
+            background-color: rgb(195, 195, 180);
+            height: 1500px;
+            width: 1500px;
+            background-image: url(https://i.pinimg.com/originals/2a/ff/5d/2aff5d3ae14a89142c768228c5c2d4ec.png);/*jcopy image address*/
+            border: 2px solid black;
+            background-repeat: no-repeat;/*repeat-x and repeat-y will make it repeat on x nd y axis*/
+
+            /*FORMAT OF POSITION IS LIKE THIS:-
+                background-position: center/top/bottom   center/left/right/
+            */
+            background-position: center center;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <h3>This first heading</h3>
+    <p id="firstpara">This first paragraph</p>
+
+    <h3>This second heading</h3>
+    <p id="secondpara">This is second paragraph</p>
+
+    <h3>This third heading</h3>
+    <p id="thirdpara">This is third paragraph</p>
+</body>
+</html>
