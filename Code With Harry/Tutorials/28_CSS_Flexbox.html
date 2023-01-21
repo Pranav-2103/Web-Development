@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container{
+            height: 554px;
+            width: 100%;
+            border: 2px solid black;
+            /* Initialise the container as a flex box */
+            display: flex; /*isse hamara container flexbox jata hai and uske ander ke items flexitems ban jaate hai*/
+
+            /* Flex properties for flex container */
+
+            /* flex-direction: row; (by default) */
+            flex-direction: column; /* column mei align ho jaenge sare flex items */
+
+            flex-direction: row-reverse; /*reversely fill hona start honge items meaning alignment reverse ho gya right to left ho gaya ab*/
+
+            flex-direction: column-reverse; /*ab bottom to top fill honge flex items meaning column filling reverse ho gyi ab*/
+
+            flex-direction: row;
+            /* flex-wrap: wrap; by default nowrap hota hai */
+            /* flex-wrap: wrap-reverse; ulta wrap krta hai */
+
+            /* This is a shorthand for flex-direction and flex-wrap */
+            /* flex-flow: row-reverse wrap; */
+
+            /* justify-content will justify the content in horizontal direction */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* flex-wrap: wrap; you need to include this before testing align items*/ 
+            /* align-items will justify the content in vertical direction */
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+            /* align-items: stretch; (ki jab wrap on hoga toh wrap hote waqt elements apne beech mei verticallyy space equal rakhenge) */
+
+        }
+        .items{
+            background-color: yellowgreen;
+            margin: 10px;
+            padding: 3px;
+            border: 2px solid red;
+            width: 200px;
+            height: 80px;
+        }
+        #box-1{
+            /* flex properties for a flex item */
+            /* Higher the order, later it shows up in the container */
+            /* order: 2; */
+
+            /* grow karne ke liye ki kis rate se grow hoga in comparison with other elements */
+            /* flex-grow: 2; */
+            /* shrink karne ke liye ki kis rate se shrink hoga in comparison with other elements */
+            /* flex-shrink: 2; */
+        }
+        #box-2{
+            /* flex-grow: 3; */
+            /* flex-shrink: 3; */
+
+            /* when flex direction is set to row flex-basis will control width */
+            /* when flex direction is set to column flex-basis will control height */
+            /* flex-basis: 20px; */
+        }
+        #box-3{
+            /* flex: grow shrink basis */
+            /* flex: 2 2 230px; */
+            /* apni hi vertical line mei item ki positioning karne ke liye we use align-self */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>This is flexbox tutorial</h1>
+    <div class="container">
+        <div class="items" id="box-1">First Box</div>
+        <div class="items" id="box-2">Second Box</div>
+        <div class="items" id="box-3">Third Box</div>
+        <!-- Include three more boxes to see the container properties more clearly -->
+    </div>
+</body>
+</html>

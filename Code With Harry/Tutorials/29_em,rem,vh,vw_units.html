@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .container{
+            font-size: 10px;
+            width: 400px;
+            border: 2px solid red;
+
+            /* vh krta hai ki jitni screen usko milti hai utni height set kr deta hai element/block ke liye */
+            /* height: 100vh;  */
+
+            /* vw kya krta hai ki max width set kar deta hai jitni possible hoti hai particular device ke hisaab se */
+            width: 100vw;
+        }
+        h1{
+            text-align: center;
+        }
+        #first{
+            /*em apne parent block ke resptective mei chalta hai*/
+            /* font-size: 3em; */
+
+            
+
+            /*here padding will be with respect to font-size of first not parent hence total padding is 30*3 i.e 90px*/
+            /* padding: 3em;  */
+
+            
+        }
+
+        #second{
+            /* rem will set font size with respect to html font-size */
+            /* font-size: 3rem; */
+
+            /* rem in padding also set the padding with respect to html font-size not with this element's font-size */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+        
+    </div>
+</body>
+</html>
