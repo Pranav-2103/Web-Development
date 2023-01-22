@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations and Keyframes</title>
+    <style>
+        
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: relative;
+
+            /* provide animation name */
+            /* animation-name: vansh; */
+            animation-name: movingVansh;
+
+            /* total time of animation */
+            animation-duration: 2s;
+
+            /* how does your animation perform like should it be fast in the begining and then slow in the end or vice versa or fast in both begining and end but slow in middle */
+            animation-timing-function: ease;
+
+            /* at the end of animation how does you want your element to be (eg: forwards karne par jo ending position hogi element ki, waise hi element reh jaaega) */
+            /* animation-fill-mode: none ; */
+
+            /* gives the direction to the animation */
+            /* animation-direction: normal; */
+
+            /* how many times should the animation run */
+            animation-iteration-count: 3;
+
+            /* these all properties can be set using this shorthand
+            animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count-animation-fill-mode
+
+            eg:
+            animation: anim 5s ease-in 2s infinte backwards
+            */
+        }
+
+        @keyframes movingVansh{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 250px;
+                left: 0px;
+            }
+            50%{
+                top: 250px;
+                left: 250px;
+            }
+            75%{
+                top: 0px;
+                left: 250px;
+            }
+            100%{
+                top: 0;
+                left: 0;
+            }
+        }
+        @keyframes vansh{
+            from{
+                width: 200px;
+                background-color: orange;
+            }
+            to{
+                width: 600px;
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

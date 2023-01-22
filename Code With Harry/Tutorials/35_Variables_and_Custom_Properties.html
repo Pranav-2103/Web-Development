@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables and Custom Properties</title>
+    <style>
+        /* inside root you can declare your variables */
+        :root{
+            --boxColor: wheat;
+            --borderColor: black;
+            --shadowColor: grey;
+            --containerWidth: 300px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: var(--boxColor);
+            margin: 2px 10px;
+            border: 2px solid var(--borderColor);
+            box-shadow: 5px 5px var(--shadowColor);
+            border-radius: 10px;
+        }
+        .container{
+            display: flex;
+            height: 700px;
+            margin: auto;
+            width: var(--containerWidth);
+            align-items: center;
+            /* since we have reduced the width of container and margin is set to auto that is whole container is in the center now therefore we may ignore justify-content because width of container is less than total actual width of all boxes hence they will be in center automatically */
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
