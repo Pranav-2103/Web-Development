@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+
+    <style>
+        
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url(https://wallpapercave.com/wp/wp3018787.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: cursive;
+        }
+        .left{
+            display: inline-block;
+            position: absolute;
+            left: 20px;
+            top: 15px;
+        }
+        .left img{
+            width: 80px;
+            margin: 15px 41px;
+            margin-bottom: 0px;
+        }
+        .left h3{
+            margin: 0px 15px;
+            font-size: 25px;  
+        }
+        .mid{
+            width: 100%;
+            margin: 27px auto;
+            text-align: center;
+
+        }
+        .mid ul{
+            padding: 0px 20px;
+            display: inline-block;
+            margin-top: 0px;
+            
+        }
+        .mid a{
+            text-decoration: none;
+            color: wheat;
+            font-size: 25px;
+        }
+        .mid a:hover{
+            text-decoration: underline;
+            color: grey;
+            cursor: pointer;
+        }
+        .mid .home{
+            text-decoration: underline;
+            color: grey;
+        }
+        .right{
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 37px;
+        }
+        .btn{
+            font-family: cursive;
+            border: 1px solid white;
+            border-radius: 7px;
+            margin-left: 10px;
+            background-color: black;
+            color: white;
+            padding: 2px 15px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .btn:hover{
+            background-color: rgb(39, 38, 38);
+        }
+        .form{
+            display: inline-block;
+            margin: 120px 150px;
+            width: 40%;
+            text-align: center;
+            border: 2px solid white;
+            border-radius: 20px;
+        }
+        .form input{
+            display: block;
+            margin: 5px auto;
+            width: 286px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+        .form .content{
+            padding: 100px;
+        }
+        .form .content .h3{
+            font-size: 25px;
+            margin-top: 0px;
+        }
+        .form .content button{
+            display: inline-block;
+            width: 292px;
+            margin-top: 28px;
+            background-color: black;
+            color: white;
+            font-size: 15px;
+            font-family: cursive;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+       <div class="left">
+            <img src="logo.png" alt="">
+            <h3>Fitness Club</h3>
+       </div>
+
+       <div class="mid">
+            <ul> <a href="Index.html" class="home">Home</a> </ul>
+            <ul> <a href="#">About</a> </ul>
+            <ul> <a href="../Gym Store/myIndex.html">Fitness Shop</a> </ul>
+            <ul> <a href="#">Contact Us</a> </ul>
+       </div>
+
+       <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+       </div>
+    </header>
+    <div class="form">
+        <div class="content">
+            <h3 class="h3">Join the Best Gym Now</h3>
+            <form action="">
+                <input type="text" placeholder="Enter Your Name">
+                <input type="text" placeholder="Enter Your Age">
+                <input type="text" placeholder="Enter Your Gender">
+                <input type="text" placeholder="Enter Your Locality">
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
